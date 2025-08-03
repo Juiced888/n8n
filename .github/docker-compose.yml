@@ -37,6 +37,7 @@ services:
       - POSTGRES_DB=n8n
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
+      - N8N_FEATURE_FLAGS=aiAgents
     ports:
       - 5432:5432
     tmpfs:
